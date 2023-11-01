@@ -39,13 +39,5 @@
 {{-- -----------------------    CLIENTE    -------------------------------------------- --}}
     @elseif(Auth::user()->rol == 'Cliente')
     @section('content')
-    @forelse ($paquetes as $item)
-        <div>
-            <img src="" alt="">
-        </div>
-    @empty
-
-    @endforelse
-
+    
     @endsection
-@endif
