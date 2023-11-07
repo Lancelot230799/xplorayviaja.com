@@ -18,12 +18,7 @@ class paquetesController extends Controller
         $paquetes = paquetes::orderBy('nombre', 'ASC')->get();
         return view('adm/crear');
     }
-    public function showPackageForm()
-    {
-        $paquete = Paquetes::orderBy("nombre","ASC");
-        return view ('home', compact("paquete"));
-    }
-
+    
     /**
      * Show the form for creating a new resource.
      */
@@ -38,7 +33,7 @@ class paquetesController extends Controller
     public function store(Request $request)
     {
         //
-        
+
         paquetes::create([
             'nombre' => request('nombre'),
             'tipotiquet' => request('tipotiquet'),

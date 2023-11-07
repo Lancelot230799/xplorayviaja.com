@@ -37,4 +37,4 @@ Route::get('xplorayviaja/updatecliente/{id}', [App\Http\Controllers\clientesCont
 Route::get('xplorayviaja/actualizarempleado/{id}', [App\Http\Controllers\EmpleadosController::class, 'edit'])->name('empleado.edit');
 Route::get('xplorayviaja/updateempleado/{id}', [App\Http\Controllers\EmpleadosController::class, 'update'])->name('empleado.update');
 /* STORE PAQUETES */
-Route::get('xplorayviaja/publicarpaquete', [App\Http\Controllers\paquetesController::class, 'store'])->name('paquete.crear');
+Route::get('xplorayviaja/publicarpaquete', [App\Http\Controllers\empleadosController::class, 'crearPaquete'])->name('paquete.crear');

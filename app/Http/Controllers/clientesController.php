@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\clientes;
 use App\Models\empleados;
 use App\Models\User;
+use App\Models\paquetes;
 
 class clientesController extends Controller
 {
@@ -28,7 +29,11 @@ class clientesController extends Controller
         ->orderby('clientes.nombre','ASC')
         ->get();
     }
-
+    public function indexpaquetes()
+    {
+        $paquetes = paquetes::all();
+        return view('home', compact('paquetes'));
+    }
     /**
      * Show the form for creating a new resource.
      */

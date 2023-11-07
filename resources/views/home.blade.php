@@ -39,5 +39,15 @@
 {{-- -----------------------    CLIENTE    -------------------------------------------- --}}
     @elseif(Auth::user()->rol == 'Cliente')
     @section('content')
-    
+        @if(!empty($paquetes))
+            @foreach ($paquetes as $paquete)
+                <div>
+                    <h2>{{ $paquete->nombre }}</h2>
+                    <!-- Muestra otros detalles del paquete turístico -->
+                </div>
+            @endforeach
+        @else
+                <a href="">Consultar paquetes</a>
+        @endif
     @endsection
+@endif

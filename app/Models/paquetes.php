@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class paquetes extends Model
 {
     use HasFactory;
-    protected $fillable = ['idpaquete','nombre','tipotiquet','traslados','diasdesalojamiento','alimentacion','capacidadequipaje','seguromedico','tour','fotopaquete','valor'];
+    protected $fillable = ['idpaquete', 'idempleado', 'nombre', 'tipotiquet', 'traslados', 'diasdesalojamiento', 'alimentacion', 'capacidadequipaje', 'seguromedico', 'tour', 'fotopaquete', 'valor'];
     protected $primaryKey = 'idpaquete';
 }
