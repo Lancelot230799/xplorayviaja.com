@@ -32,7 +32,7 @@ class clientesController extends Controller
     public function indexpaquetes()
     {
         $paquetes = paquetes::all();
-        return view('home', compact('paquetes'));
+        return view('catalogo', compact('paquetes'));
     }
     /**
      * Show the form for creating a new resource.

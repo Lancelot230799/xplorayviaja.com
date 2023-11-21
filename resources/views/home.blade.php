@@ -32,6 +32,7 @@
                     <div class="card-header">{{ __('Bienvenido') }} {{ Auth::user()->name }}</div>
                     <div class="card-body">
                         <a href="{{ route('crear.index') }}">Crear paquete</a>
+                        <a href="">Gestionar reservas</a>
                     </div>
                 </div>
         </div>
@@ -47,7 +48,7 @@
                 </div>
             @endforeach
         @else
-                <a href="">Consultar paquetes</a>
+                <a href="{{ route('paquetes.index') }}">Consultar paquetes</a>
         @endif
     @endsection
 @endif

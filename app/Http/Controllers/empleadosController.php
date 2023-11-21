@@ -74,7 +74,7 @@ class empleadosController extends Controller
         // Asignar el paquete al empleado actual
         $paquetes->save();
         $paquetes = paquetes::all();
-        return view('home', compact('paquetes'));
+        return view('catalogo', compact('paquetes'));
         // Redirigir a la vista de empleados o donde sea apropiado
     }
     /**

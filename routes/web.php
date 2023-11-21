@@ -38,3 +38,4 @@ Route::get('xplorayviaja/actualizarempleado/{id}', [App\Http\Controllers\Emplead
 Route::get('xplorayviaja/updateempleado/{id}', [App\Http\Controllers\EmpleadosController::class, 'update'])->name('empleado.update');
 /* STORE PAQUETES */
 Route::get('xplorayviaja/publicarpaquete', [App\Http\Controllers\empleadosController::class, 'crearPaquete'])->name('paquete.crear');
+Route::get('xplorayviaja/publicarpaquete', [App\Http\Controllers\clientesController::class, 'indexpaquetes'])->name('paquetes.index');
